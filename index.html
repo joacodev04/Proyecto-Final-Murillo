@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Suple-Xpert | Tu Tienda Fitness</title>
+</head>
+<body>
+
+<header>
+    <nav id="nav">
+        <ul class="nav-ul">
+            <a href="index.html">INICIO</a>
+            <li><a href="pages/tienda.html">TIENDA</a> </li>
+            <li><a href="pages/sobrenosotros.html">SOBRE NOSOTROS</a> </li>
+            <li><a href="pages/contactanos.html">CONTACTANOS</a> </li>
+            <a id="carrito" class="carrito-link" href="pages/carrito.html">🛒COMPRAS</a>
+        </ul>
+    </nav>
+</header>
+
+<!-- Contenedor principal que coloca la seccion y el carrusel lado a lado -->
+<div class="principal-fila">
+    <section class="principal">
+        <div class="contenedor-principal">
+            <div class="contenido-principal">
+                <h1>Suple-Xpert</h1>
+                <div class="texto-principal">
+                    <p class="destacado">TIENDA FITNESS ONLINE #1 DEL PAÍS</p>
+                    <p>Nos especializamos en suplementos nacionales e importados de la más alta calidad para potenciar tus resultados.</p>
+                    <a href="pages/tienda.html" class="boton-primario" role="button" aria-label="Ir a la tienda">Explorar Productos</a>
+                </div>
+            </div>
+            <div class="imagen-principal">
+                <img src="./img/principal.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Carrusel  -->
+    <aside class="carrusel-aside">
+        <div class="carrusel-contenedor">
+            <input type="radio" name="carrusel" id="slide1" checked>
+            <input type="radio" name="carrusel" id="slide2">
+            <input type="radio" name="carrusel" id="slide3">
+            <input type="radio" name="carrusel" id="slide4">
+
+            <div class="carrusel-slides">
+                <div class="slide s1">
+                    <img src="./img/17295018498639.jpg" alt="imagen 1">
+                </div>
+                <div class="slide s2">
+                    <img src="./img/entrenamiento-hombre-fuerte-gimnasio_1303-23478.jpg" alt="imagen 2">
+                </div>
+                <div class="slide s3">
+                    <img src="./img/monitordegimnasio2.jpg" alt="imagen 3">
+                </div>
+                <div class="slide s4">
+                    <img src="./img/img-nav.png" alt="imagen 4">
+                </div>
+            </div>
+
+            <div class="carrusel-controles">
+                <label for="slide1" class="control"></label>
+                <label for="slide2" class="control"></label>
+                <label for="slide3" class="control"></label>
+                <label for="slide4" class="control"></label>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<section class="caracteristicas">
+    <div class="grid-caracteristicas">
+        <div class="tarjeta">
+            <div class="icono">🚚</div>
+            <h3>Envío Nacional</h3>
+            <p>Servicio de Correo Argentino</p>
+        </div>
+        <div class="tarjeta">
+            <div class="icono">💳</div>
+            <h3>Medios de Pago</h3>
+            <p>Mercado Pago & Transferencia</p>
+        </div>
+        <div class="tarjeta">
+            <div class="icono">🏪</div>
+            <h3>Ventas</h3>
+            <p>Mayorista y Minorista</p>
+        </div>
+        <div class="tarjeta">
+            <div class="icono">🏆</div>
+            <h3>Calidad Premium</h3>
+            <p>Productos de Primera Línea</p>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <p>&copy; Suple-Xpert. Todos los derechos reservados.</p>
+</footer>
+
+<script src="./js/main.js"></script>
+</body>
+</html>

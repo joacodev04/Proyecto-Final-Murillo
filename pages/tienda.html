@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Tienda | Suple-Xpert</title>
+</head>
+<body>
+
+<header>
+    <nav id="nav">
+        <ul class="nav-ul">
+            <a href="../index.html">INICIO</a>
+            <li><a href="tienda.html">TIENDA</a> </li>
+            <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a> </li>
+            <li><a href="contactanos.html">CONTACTANOS</a> </li>
+            <a id="carrito" class="carrito-link" href="carrito.html">🛒COMPRAS</a>
+        </ul>
+    </nav>
+</header>
+
+<main class="tienda-contenedor">
+    <section class="tienda-encabezado">
+        <h1>Nuestros Productos</h1>
+        <p class="descripcion-tienda">Descubrí nuestra selección de suplementos de alta calidad para potenciar tu rendimiento</p>
+    </section>
+
+    <section class="productos-grid">
+        <article class="producto-card">
+            <div class="producto-imagen">
+                <img src="../img/creatina.jpg" alt="Creatina Monohidratada">
+                <span class="etiqueta-nuevo">Nuevo</span>
+            </div>
+            <div class="producto-info">
+                <h3>Creatina Monohidratada</h3>
+                <p class="producto-descripcion">Aumenta tu fuerza y rendimiento muscular</p>
+                <div class="producto-precio">
+                    <span class="precio">$24.999</span>
+                    <button data-id="1" class="boton-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="producto-card">
+            <div class="producto-imagen">
+                <img src="../img/proteina.png" alt="Proteína Star Nutrition">
+                <span class="etiqueta-oferta">-20%</span>
+            </div>
+            <div class="producto-info">
+                <h3>Proteína Star Nutrition</h3>
+                <p class="producto-descripcion">Whey Protein de alta pureza, 930g</p>
+                <div class="producto-precio">
+                    <span class="precio-anterior">$42.999</span>
+                    <span class="precio">$34.399</span>
+                    <button data-id="2" class="boton-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="producto-card">
+            <div class="producto-imagen">
+                <img src="../img/Prewar_Lemonade.webp" alt="Pre-War Pre-entreno">
+            </div>
+            <div class="producto-info">
+                <h3>Pre-War Lemonade</h3>
+                <p class="producto-descripcion">Pre-entreno de alto rendimiento</p>
+                <div class="producto-precio">
+                    <span class="precio">$29.999</span>
+                    <button data-id="3" class="boton-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="producto-card">
+            <div class="producto-imagen">
+                <img src="../img/ultramass.webp" alt="Ultra Mass Ganador">
+                <span class="etiqueta-nuevo">Nuevo</span>
+            </div>
+            <div class="producto-info">
+                <h3>Ultra Mass Ganador</h3>
+                <p class="producto-descripcion">Ganador de peso y masa muscular</p>
+                <div class="producto-precio">
+                    <span class="precio">$32.999</span>
+                    <button data-id="4" class="boton-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="producto-card">
+            <div class="producto-imagen">
+                <img src="../img/glutamina.webp" alt="Glutamina Micronizada">
+            </div>
+            <div class="producto-info">
+                <h3>Glutamina Micronizada</h3>
+                <p class="producto-descripcion">Recuperación muscular avanzada</p>
+                <div class="producto-precio">
+                    <span class="precio">$19.999</span>
+                    <button data-id="5" class="boton-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="producto-card">
+            <div class="producto-imagen">
+                <img src="../img/multivitaminico.webp" alt="Multivitamínico">
+                <span class="etiqueta-oferta">-10%</span>
+            </div>
+            <div class="producto-info">
+                <h3>Multivitamínico Plus</h3>
+                <p class="producto-descripcion">Complejo vitamínico deportivo</p>
+                <div class="producto-precio">
+                    <span class="precio-anterior">$15.999</span>
+                    <span class="precio">$14.399</span>
+                    <button data-id="6" class="boton-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="producto-card">
+            <div class="producto-imagen">
+                <img src="../img/barras.jpg" alt="Barritas Proteicas">
+                <span class="etiqueta-nuevo">Nuevo</span>
+            </div>
+            <div class="producto-info">
+                <h3>Barritas Proteicas Pack x6</h3>
+                <p class="producto-descripcion">Deliciosas barritas con 20g de proteína</p>
+                <div class="producto-precio">
+                    <span class="precio">$12.999</span>
+                    <button data-id="7" class="boton-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </article>
+
+        <article class="producto-card">
+            <div class="producto-imagen">
+                <img src="../img/pancakes.png" alt="Pancakes Proteicos">
+                <span class="etiqueta-nuevo">Nuevo</span>
+            </div>
+            <div class="producto-info">
+                <h3>Mix para Pancakes Proteicos</h3>
+                <p class="producto-descripcion">Prepara deliciosos pancakes con 15g de proteína por porción</p>
+                <div class="producto-precio">
+                    <span class="precio">$16.999</span>
+                    <button data-id="8" class="boton-agregar">Agregar al Carrito</button>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer class="footer">
+    <p>&copy; Suple-Xpert. Todos los derechos reservados.</p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="../js/main.js"></script>
+</body>
+</html>

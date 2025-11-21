@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Suple-Xpert | Carrito</title>
+</head>
+<body>
+
+<header>
+    <nav id="nav">
+        <ul class="nav-ul">
+            <a href="../index.html">INICIO</a>
+            <li><a href="tienda.html">TIENDA</a></li>
+            <li><a href="sobrenosotros.html">SOBRE NOSOTROS</a></li>
+            <li><a href="contactanos.html">CONTACTANOS</a></li>
+            <li><a id="carrito" class="carrito-link" href="carrito.html">🛒COMPRAS</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="contenedor carrito-container">
+    <h1 class="carrito-title">Carrito de Compras</h1>
+
+    <div class="carrito-grid">
+        <!-- Lista de productos -->
+        <section class="carrito-items">
+            <p class="descripcion">Aquí se mostrarán los productos que agregues al carrito.</p>
+
+
+            <!-- Mensaje si el carrito está vacío -->
+            <div class="carrito-vacio">
+                <p class="carrito-empty">Si aún no agregaste productos, buscá en la <a href="tienda.html" class="link-primary">tienda</a> y los verás aquí.</p>
+            </div>
+        </section>
+
+        <!-- Resumen de compra -->
+        <aside class="resumen-compra">
+            <div class="resumen-box">
+                <h2>Resumen</h2>
+                <p class="resumen">Aún no hay artículos en el carrito.</p>
+                <p id="total"></p>
+                <a href="tienda.html" class="boton-primario boton-block">Ir a la Tienda</a>
+            </div>
+        </aside>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>&copy; Suple-Xpert. Todos los derechos reservados.</p>
+</footer>
+
+
+<script src="../js/carrito.js"></script>
+</body>
+</html>
