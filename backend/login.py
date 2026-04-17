@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from flask_bcrypt import Bcrypt
 import json
 
@@ -7,27 +7,23 @@ bcrypt = Bcrypt(app)
 
 archivo = "usuarios.json"
 
-usuario = {
-    "username1": {
-        "username": "administrador",
-        "password": "1234",
-        "role": "administrador"
-    }
-}
+@app.route("/acceso-login", methods=["POST"])
+def login():
+    data = request.json
 
-#Encriptar 
-for key in usuario:
-    clave = usuario[key]["password"]
-    hash_clave = bcrypt.generate_password_hash(clave).decode("utf-8")
-    usuario[key]["password"] = hash_clave
+    username = data["username"]
+    password = data["password"]
 
-#Guardar archivo
-with open(archivo, "w") as f:
-    json.dump(usuario, f, indent=4)
+    with open(archivo, "r") as f:
+        usuarios = json.load(f)
 
-@app.route("/")
-def home():
-    return {"message": "esto funciona"}
+    for user in usuarios.values():
+        if user["username"] == username:
+            if bcrypt.check_password_hash(user["password"], password):
+                return {"mensaje": "Login correcto"}
+
+    return {"error": "Credenciales incorrectas"}, 401
+
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
